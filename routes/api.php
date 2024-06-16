@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\API\BranchSalonController;
 use App\Http\Controllers\API\CustomerReviewController;
 use App\Http\Controllers\API\UserController;
 use Illuminate\Http\Request;
@@ -29,3 +30,7 @@ Route::post('register', [UserController::class, 'register']);
 
 //review
 Route::get('get-review', [CustomerReviewController::class, 'getAll']);
+
+
+//branch_Salon
+Route::post('create-branch', [BranchSalonController::class, 'createBranch']);
