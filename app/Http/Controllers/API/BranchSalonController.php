@@ -25,6 +25,7 @@ class BranchSalonController extends Controller
             $dataBranch = BranchSalon::create([
                 'branch_name' => $request->branch_name,
                 'branch_address' => $request->branch_address,
+                'services' => $request->services,
                 'opening_time' => $request->opening_time,
                 'closing_time' => $request->closing_time
             ]);

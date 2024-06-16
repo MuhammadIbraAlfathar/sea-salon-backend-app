@@ -24,7 +24,7 @@ class ReservationController extends Controller
                 'branch_id' => 'required|exists:branch_salons,id',
                 'user_name' => 'required|string',
                 'phone_number' => 'required|string',
-                'services' => 'required|string',
+                // 'services' => 'required|string',
                 'date' => 'required',
                 'time_start' => 'required',
                 'time_end' => 'required'

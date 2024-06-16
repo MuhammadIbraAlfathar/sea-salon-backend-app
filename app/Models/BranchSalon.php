@@ -10,6 +10,6 @@ class BranchSalon extends Model
     use HasFactory;
 
     protected $fillable = [
-        'branch_name', 'branch_address', 'branch_address', 'opening_time', 'closing_time'
+        'branch_name', 'branch_address', 'branch_address', 'opening_time', 'closing_time', 'services'
     ];
 }
