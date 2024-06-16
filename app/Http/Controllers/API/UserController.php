@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\API;
 
+use App\Actions\Fortify\PasswordValidationRules;
 use App\Helpers\ResponseFormatter;
 use App\Http\Controllers\Controller;
 use App\Models\User;
@@ -12,9 +13,10 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+
+    use PasswordValidationRules;
+
     //login user
-
-
     public function login(Request $request)
     {
         try {
@@ -53,6 +55,60 @@ class UserController extends Controller
                 "message" => "Something went wrong",
                 "error" => $error
             ], 'Authentication Failed', 500);
+        }
+    }
+
+
+    //register user
+    public function register(Request $request)
+    {
+        try {
+
+            //validasi
+            $request->validate(
+                [
+                    'name' => 'string|required',
+                    'email' => 'email|required',
+                    'password' => 'required|min:8'
+                ]
+            );
+
+
+
+            //create user
+            User::create([
+                'name' => $request->name,
+                'email' => $request->email,
+                'phone_number' => $request->phone_number,
+                'total_reservation' => 0,
+                'password' => Hash::make($request->password)
+            ]);
+
+            //mengambil data user berdasarkan email
+            $user = User::where('email', $request->email)->first();
+
+            //membuat token
+            $tokenResult = $user->createToken('authToken')->plainTextToken;
+
+            //mengembalikan data ketika berhasil register
+            return ResponseFormatter::success(
+                [
+                    "access_token" => $tokenResult,
+                    "token_type" => "Bearer",
+                    "user" => $user
+                ],
+                'Success Register'
+            );
+        } catch (Exception $error) {
+            //mengembalikan error 500 jika tidak berhasil
+            return ResponseFormatter::error(
+                [
+                    "message" => "Something went wrong",
+                    "error" => $error
+                ],
+                "Authentiaction Failed",
+                500
+            );
         }
     }
 }
