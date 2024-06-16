@@ -34,3 +34,4 @@ Route::get('get-review', [CustomerReviewController::class, 'getAll']);
 
 //branch_Salon
 Route::post('create-branch', [BranchSalonController::class, 'createBranch']);
+Route::get('branch-salon', [BranchSalonController::class, 'getAll']);

@@ -47,4 +47,17 @@ class BranchSalonController extends Controller
             );
         }
     }
+
+    //get all data branch
+    public function getAll()
+    {
+        $data = BranchSalon::all();
+
+        return ResponseFormatter::success(
+            [
+                "branch_salon" => $data
+            ],
+            'Success get data review'
+        );
+    }
 }
