@@ -80,7 +80,6 @@ class UserController extends Controller
                 'name' => $request->name,
                 'email' => $request->email,
                 'phone_number' => $request->phone_number,
-                'total_reservation' => 0,
                 'password' => Hash::make($request->password)
             ]);
 

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\API\BranchSalonController;
 use App\Http\Controllers\API\CustomerReviewController;
+use App\Http\Controllers\API\ReservationController;
 use App\Http\Controllers\API\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -19,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('review', [CustomerReviewController::class, 'create_review']);
+    Route::post('create-reservation', [ReservationController::class, 'createReservation']);
 });
 
 
