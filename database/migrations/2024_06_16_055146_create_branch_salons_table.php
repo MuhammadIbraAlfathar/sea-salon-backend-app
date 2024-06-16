@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('branch_salons', function (Blueprint $table) {
             $table->id();
-            $table->string("branch_name");
-            $table->text("branch_address");
+            $table->string('branch_name');
+            $table->text('branch_address');
             $table->time('opening_time');
             $table->time('closing_time');
             $table->timestamps();
