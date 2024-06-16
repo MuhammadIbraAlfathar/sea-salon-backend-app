@@ -49,4 +49,16 @@ class CustomerReviewController extends Controller
             );
         }
     }
+
+    public function getAll()
+    {
+        $data = CustomerReview::all();
+
+        return ResponseFormatter::success(
+            [
+                "reviews" => $data
+            ],
+            'Success get data review'
+        );
+    }
 }
