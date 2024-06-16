@@ -78,4 +78,27 @@ class ReservationController extends Controller
             );
         }
     }
+
+
+    public function getReservationByUserId($user_id)
+    {
+        try {
+            $reservations = Reservation::where('user_id', $user_id)->get();
+            return ResponseFormatter::success(
+                [
+                    "data_reservation" => $reservations,
+                ],
+                'Success get data reservation'
+            );
+        } catch (Exception $error) {
+            return ResponseFormatter::error(
+                [
+                    "message" => "Something went wrong",
+                    "error" => $error
+                ],
+                "Create Review Failed",
+                500
+            );
+        }
+    }
 }

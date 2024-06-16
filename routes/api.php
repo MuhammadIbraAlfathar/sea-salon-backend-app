@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('review', [CustomerReviewController::class, 'create_review']);
     Route::post('create-reservation', [ReservationController::class, 'createReservation']);
+    Route::get('reservations/{id}', [ReservationController::class, 'getReservationByUserId']);
 });
 
 
