@@ -25,6 +25,7 @@ class MainServiceController extends Controller
     public function create()
     {
         //
+        return view('services.create');
     }
 
     /**
@@ -33,6 +34,10 @@ class MainServiceController extends Controller
     public function store(Request $request)
     {
         //
+        $data = $request->all();
+        MainServices::create($data);
+
+        return redirect()->route('services.index');
     }
 
     /**
