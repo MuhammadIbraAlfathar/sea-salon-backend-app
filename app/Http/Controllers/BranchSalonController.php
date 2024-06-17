@@ -60,24 +60,32 @@ class BranchSalonController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(BranchSalon $branch)
     {
         //
+        return view('branch_salon.edit', [
+            'branch' => $branch
+        ]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, BranchSalon $branch)
     {
         //
+        $data = $request->all();
+        $branch->update($data);
+        return redirect()->route('branchs.index');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(BranchSalon $branch)
     {
         //
+        $branch->delete();
+        return redirect()->route('branchs.index');
     }
 }
