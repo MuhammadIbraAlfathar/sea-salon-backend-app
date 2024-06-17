@@ -15,13 +15,13 @@ class BranchSalonController extends Controller
     {
         //
         $branchSalon = BranchSalon::paginate(10);
-        $branches = BranchSalon::all();
+        // $branches = BranchSalon::all();
 
-        foreach ($branches as $branch) {
-            // Mengubah waktu ke zona WIB
-            $branch->opening_time = Carbon::createFromFormat('H:i:s', $branch->opening_time, 'UTC')->setTimezone('Asia/Jakarta');
-            $branch->closing_time = Carbon::createFromFormat('H:i:s', $branch->closing_time, 'UTC')->setTimezone('Asia/Jakarta');
-        }
+        // foreach ($branches as $branch) {
+        //     // Mengubah waktu ke zona WIB
+        //     $branch->opening_time = Carbon::createFromFormat('H:i:s', $branch->opening_time, 'UTC')->setTimezone('Asia/Jakarta');
+        //     $branch->closing_time = Carbon::createFromFormat('H:i:s', $branch->closing_time, 'UTC')->setTimezone('Asia/Jakarta');
+        // }
 
         return view('branch_salon.index', [
             'branch' => $branchSalon
@@ -34,6 +34,7 @@ class BranchSalonController extends Controller
     public function create()
     {
         //
+        return view('branch_salon.create');
     }
 
     /**
@@ -42,6 +43,10 @@ class BranchSalonController extends Controller
     public function store(Request $request)
     {
         //
+        $data = $request->all();
+        BranchSalon::create($data);
+
+        return redirect()->route('branchs.index');
     }
 
     /**
