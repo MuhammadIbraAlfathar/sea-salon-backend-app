@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BranchSalonController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\MainServiceController;
 use Illuminate\Support\Facades\Route;
@@ -26,6 +27,7 @@ Route::prefix('dashboard')
     ->group(function () {
         Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
         Route::resource('services', MainServiceController::class);
+        Route::resource('branchs', BranchSalonController::class);
     });
 
 
