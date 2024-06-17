@@ -73,8 +73,10 @@ class MainServiceController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(MainServices $service)
     {
         //
+        $service->delete();
+        return redirect()->route('services.index');
     }
 }
