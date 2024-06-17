@@ -46,7 +46,7 @@
                                 {{ $item->duration }} Minute
                             </td>
                             <td class="border px-6 py-4 text-center">
-                                <a href="#" class="inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 mx-2 rounded">
+                                <a href="{{ route('services.edit', $item->id) }}" class="inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 mx-2 rounded">
                                     Edit
                                 </a>
                                 <form action="#" method="POST" class="inline-block">
