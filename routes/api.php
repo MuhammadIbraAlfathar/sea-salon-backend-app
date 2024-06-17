@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\API\BranchSalonController;
 use App\Http\Controllers\API\CustomerReviewController;
+use App\Http\Controllers\API\MainServiceController;
 use App\Http\Controllers\API\ReservationController;
 use App\Http\Controllers\API\UserController;
 use Illuminate\Http\Request;
@@ -38,3 +39,9 @@ Route::get('get-review', [CustomerReviewController::class, 'getAll']);
 //branch_Salon
 Route::post('create-branch', [BranchSalonController::class, 'createBranch']);
 Route::get('branch-salon', [BranchSalonController::class, 'getAll']);
+
+
+//service
+Route::post('create-main-service', [MainServiceController::class, 'createService']);
+
+Route::get('main-services', [MainServiceController::class, 'getAll']);
