@@ -43,4 +43,28 @@ class MainServiceController extends Controller
             );
         }
     }
+
+
+    public function getAll()
+    {
+
+        try {
+            $data = MainServices::all();
+            return ResponseFormatter::success(
+                [
+                    "data" => $data
+                ],
+                'Success Create Service'
+            );
+        } catch (Exception $error) {
+            return ResponseFormatter::error(
+                [
+                    "message" => "Something went wrong",
+                    "error" => $error
+                ],
+                "Create Review Failed",
+                500
+            );
+        }
+    }
 }
