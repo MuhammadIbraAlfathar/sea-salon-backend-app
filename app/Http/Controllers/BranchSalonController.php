@@ -13,15 +13,8 @@ class BranchSalonController extends Controller
      */
     public function index()
     {
-        //
-        $branchSalon = BranchSalon::paginate(10);
-        // $branches = BranchSalon::all();
 
-        // foreach ($branches as $branch) {
-        //     // Mengubah waktu ke zona WIB
-        //     $branch->opening_time = Carbon::createFromFormat('H:i:s', $branch->opening_time, 'UTC')->setTimezone('Asia/Jakarta');
-        //     $branch->closing_time = Carbon::createFromFormat('H:i:s', $branch->closing_time, 'UTC')->setTimezone('Asia/Jakarta');
-        // }
+        $branchSalon = BranchSalon::paginate(10);
 
         return view('branch_salon.index', [
             'branch' => $branchSalon
