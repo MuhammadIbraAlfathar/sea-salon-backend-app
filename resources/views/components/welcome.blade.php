@@ -1,12 +1,10 @@
 <div class="p-6 lg:p-8 bg-white border-b border-gray-200">
-    <x-application-logo class="block h-12 w-auto" />
-
     <h1 class="mt-8 text-2xl font-medium text-gray-900">
-        Welcome to SEA Salon
+        Welcome to SEA Salon Admin Apps
     </h1>
 
     <p class="mt-6 text-gray-500 leading-relaxed">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur dictum sem, et pretium leo vulputate a. Nulla diam urna, rhoncus sed pellentesque et, bibendum at sapien. Duis lacinia sodales neque, id scelerisque erat placerat vel. Sed vehicula, sem non bibendum euismod, dui lectus finibus quam, ut gravida est dolor et nisl. Integer feugiat feugiat velit condimentum vehicula. Nam sagittis, nisi et sodales posuere, tortor augue venenatis nunc, vel tempor orci leo ac dolor. Nullam convallis erat vitae luctus scelerisque.
+        Immerse yourself in a haven of relaxation and rejuvenation at SEA Salon, where skilled stylists and therapists are dedicated to transforming your look and revitalizing your spirit. Step into our tranquil oasis and let our team of experts pamper you with a range of hair, nail, and skin care services tailored to your unique needs and preferences.
     </p>
 </div>
 
@@ -22,12 +20,12 @@
         </div>
 
         <p class="mt-4 text-gray-500 text-sm leading-relaxed">
-            Laravel has wonderful documentation covering every aspect of the framework. Whether you're new to the framework or have previous experience, we recommend reading all of the documentation from beginning to end.
+            This page contains service data provided, on this page the admin can add, edit, delete service data contained in SEA Salon.
         </p>
 
         <p class="mt-4 text-sm">
-            <a href="#" class="inline-flex items-center font-semibold text-indigo-700">
-                Explore the documentation
+            <a href="{{ route('services.index') }}" class="inline-flex items-center font-semibold text-indigo-700">
+                Explore the main services page
 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="ms-1 w-5 h-5 fill-indigo-500">
                     <path fill-rule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clip-rule="evenodd" />
@@ -47,12 +45,12 @@
         </div>
 
         <p class="mt-4 text-gray-500 text-sm leading-relaxed">
-            Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
+            This page contains SEA Salon branch location data, on this page the admin can add, edit, delete branch data contained in SEA Salon.
         </p>
 
         <p class="mt-4 text-sm">
-            <a href="#" class="inline-flex items-center font-semibold text-indigo-700">
-                Start watching Laracasts
+            <a href="{{ route('branchs.index') }}" class="inline-flex items-center font-semibold text-indigo-700">
+                Explore the branch salon page
 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="ms-1 w-5 h-5 fill-indigo-500">
                     <path fill-rule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clip-rule="evenodd" />
