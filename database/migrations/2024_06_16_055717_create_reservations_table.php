@@ -14,9 +14,7 @@ return new class extends Migration
         Schema::create('reservations', function (Blueprint $table) {
             $table->id();
             $table->integer('user_id');
-            $table->integer('branch_id');
             $table->string('user_name');
-            $table->string('branch_name');
             $table->string('phone_number');
             $table->string('services');
             $table->date('date');

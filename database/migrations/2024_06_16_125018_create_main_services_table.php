@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('services_name');
             $table->integer('duration');
             $table->text('description');
+            $table->text('picturePath');
             $table->timestamps();
         });
     }

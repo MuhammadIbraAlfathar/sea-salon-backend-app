@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('branch_name');
             $table->text('branch_address');
+            $table->text('picturePath');
             $table->text('services');
             $table->time('opening_time');
             $table->time('closing_time');
