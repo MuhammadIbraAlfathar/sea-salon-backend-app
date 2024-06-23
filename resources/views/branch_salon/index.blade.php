@@ -26,7 +26,13 @@
                                 Branch Name
                             </th>
                             <th class="border px-6 py4">
+                                Image
+                            </th>
+                            <th class="border px-6 py4">
                                 Address
+                            </th>
+                            <th class="border px-6 py4">
+                                Service
                             </th>
                             <th class="border px-6 py4">
                                 Opening Time
@@ -48,8 +54,14 @@
                             <td class="border px-6 py-4">
                                 {{ $item->branch_name }}
                             </td>
+                            <td class="border px-20 py-10">
+                                <img src="{{ $item->picturePath }}" alt="" class="w-50 h-auto rounded">                                    
+                            </td>
                             <td class="border px-6 py-4">
                                 {{ $item->branch_address }}
+                            </td>
+                            <td class="border px-6 py-4">
+                                {{ $item->services}}
                             </td>
                             <td class="border px-6 py-4">
                                 {{ $item->opening_time }}

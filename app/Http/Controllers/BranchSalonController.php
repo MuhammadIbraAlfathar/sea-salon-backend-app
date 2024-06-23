@@ -37,6 +37,7 @@ class BranchSalonController extends Controller
     {
         //
         $data = $request->all();
+        $data['picturePath'] = $request->file('picturePath')->store('assets/branch_salon', 'public');
         BranchSalon::create($data);
 
         return redirect()->route('branchs.index');
@@ -68,6 +69,9 @@ class BranchSalonController extends Controller
     {
         //
         $data = $request->all();
+        if ($request->file('picturePath')) {
+            $data['picturePath'] = $request->file('picturePath')->store('assets/branch_salon', 'public');
+        }
         $branch->update($data);
         return redirect()->route('branchs.index');
     }

@@ -21,10 +21,9 @@ class ReservationController extends Controller
         try {
             $request->validate([
                 'user_id' => 'required|exists:users,id',
-                'branch_id' => 'required|exists:branch_salons,id',
                 'user_name' => 'required|string',
                 'phone_number' => 'required|string',
-                // 'services' => 'required|string',
+                'services' => 'required|string',
                 'date' => 'required',
                 'time_start' => 'required',
                 'time_end' => 'required'
@@ -50,8 +49,6 @@ class ReservationController extends Controller
 
             $reservation = Reservation::create([
                 'user_id' => $request->user_id,
-                'branch_id' => $request->branch_id,
-                'branch_name' => $request->branch_name,
                 'user_name' => $request->user_name,
                 'phone_number' => $request->phone_number,
                 'services' => $request->services,

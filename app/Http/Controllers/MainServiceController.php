@@ -35,6 +35,7 @@ class MainServiceController extends Controller
     {
         //
         $data = $request->all();
+        $data['picturePath'] = $request->file('picturePath')->store('assets/mainservices', 'public');
         MainServices::create($data);
 
         return redirect()->route('services.index');
@@ -66,6 +67,11 @@ class MainServiceController extends Controller
     {
         //
         $data = $request->all();
+
+        if ($request->file('picturePath')) {
+            $data['picturePath'] = $request->file('picturePath')->store('assets/mainservices', 'public');
+        }
+
         $service->update($data);
         return redirect()->route('services.index');
     }
