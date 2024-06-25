@@ -9,6 +9,8 @@ Sea salon admin apps is an admin application that has the aim of making it easie
 - [Features](#Features)
 - [Requirements](#Requirements)
 - [Installation](#Installation)
+- [Screenshot Apps](#Screenshots)
+- [Additional](#Additional)
 
 
 
