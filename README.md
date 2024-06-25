@@ -91,14 +91,14 @@ Follow these steps to install this app on your local machine.
 ## Screenshots
 
 <p float="left">
-  <img src="https://github.com/MuhammadIbraAlfathar/assetsweb/blob/main/WhatsApp%20Image%202024-06-25%20at%207.46.22%20AM.jpeg?raw=true" width="100" />
-  <img src="https://github.com/MuhammadIbraAlfathar/assetsweb/blob/main/WhatsApp%20Image%202024-06-25%20at%207.46.44%20AM.jpeg?raw=true" width="100" /> 
-  <img src="https://github.com/MuhammadIbraAlfathar/assetsweb/blob/main/WhatsApp%20Image%202024-06-25%20at%207.46.51%20AM.jpeg?raw=true" width="100" />
-  <img src="https://github.com/MuhammadIbraAlfathar/assetsweb/blob/main/WhatsApp%20Image%202024-06-25%20at%207.46.58%20AM.jpeg?raw=true" width="100" />
-  <img src="https://github.com/MuhammadIbraAlfathar/assetsweb/blob/main/WhatsApp%20Image%202024-06-25%20at%207.47.07%20AM.jpeg?raw=true" width="100" />
-  <img src="https://github.com/MuhammadIbraAlfathar/assetsweb/blob/main/WhatsApp%20Image%202024-06-25%20at%207.47.20%20AM.jpeg?raw=true" width="100" />
-  <img src="https://github.com/MuhammadIbraAlfathar/assetsweb/blob/main/WhatsApp%20Image%202024-06-25%20at%207.47.26%20AM.jpeg?raw=true" width="100" />
-  <img src="https://github.com/MuhammadIbraAlfathar/assetsweb/blob/main/WhatsApp%20Image%202024-06-25%20at%207.47.38%20AM.jpeg?raw=true" width="100" />
+  <img src="https://github.com/MuhammadIbraAlfathar/assetsweb/blob/main/WhatsApp%20Image%202024-06-25%20at%207.46.22%20AM.jpeg?raw=true" width="200" />
+  <img src="https://github.com/MuhammadIbraAlfathar/assetsweb/blob/main/WhatsApp%20Image%202024-06-25%20at%207.46.44%20AM.jpeg?raw=true" width="200" /> 
+  <img src="https://github.com/MuhammadIbraAlfathar/assetsweb/blob/main/WhatsApp%20Image%202024-06-25%20at%207.46.51%20AM.jpeg?raw=true" width="200" />
+  <img src="https://github.com/MuhammadIbraAlfathar/assetsweb/blob/main/WhatsApp%20Image%202024-06-25%20at%207.46.58%20AM.jpeg?raw=true" width="200" />
+  <img src="https://github.com/MuhammadIbraAlfathar/assetsweb/blob/main/WhatsApp%20Image%202024-06-25%20at%207.47.07%20AM.jpeg?raw=true" width="200" />
+  <img src="https://github.com/MuhammadIbraAlfathar/assetsweb/blob/main/WhatsApp%20Image%202024-06-25%20at%207.47.20%20AM.jpeg?raw=true" width="200" />
+  <img src="https://github.com/MuhammadIbraAlfathar/assetsweb/blob/main/WhatsApp%20Image%202024-06-25%20at%207.47.26%20AM.jpeg?raw=true" width="200" />
+  <img src="https://github.com/MuhammadIbraAlfathar/assetsweb/blob/main/WhatsApp%20Image%202024-06-25%20at%207.47.38%20AM.jpeg?raw=true" width="200" />
 </p>
 
 
